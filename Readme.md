@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Зайцев](https://up.htmlacademy.ru/htmlcss/32/user/1904071).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Зайцев] (https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
