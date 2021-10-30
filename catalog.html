@@ -23,7 +23,7 @@
   </nav>
   <main class="main-inner">
 
-    <Section>
+    <section>
       <h1 class="main-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -33,9 +33,9 @@
           <a class="breadcrumbs-link" href="#">Гостиницы</a>
         </li>
       </ul>
-    </Section>
-    <Section>
-      <h1 class="visually-hidden">Форма для фильтра гостиниц</h1>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Форма для фильтра гостиниц</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <fieldset class="catalog-filter-group">
@@ -112,11 +112,11 @@
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
       </form>
-    </Section>
+    </section>
 
     <section class="accomodation-selection">
       <h1 class="visually-hidden">Список выбранных гостиниц</h1>
-      <span class="selection-head">НАЙДЕНО ГОСТИНИЦ:</span>
+      <span class="selection-head">Найдено гостиниц:</span>
       <span class="number-selected">38</span>
 
       <form class="sorting-type">
@@ -141,8 +141,10 @@
 
       <ul class="product-list">
         <li class="product-card">
-          <img class="product-card-image" src="#" alt="Amara Resort & Spa">
-          <h3 class="product-card-title">Amara Resort & Spa</h3>
+          <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="#" alt="Amara Resort & Spa">
+            <h3 class="product-card-title">Amara Resort & Spa</h3>
+          </a>
           <span class="product-type">Гостиница</span>
           <span class="product-card-price">От 4000 ₽</span>
           <a class="product-card-button button" href="product.html">Подробнее</a>
@@ -152,8 +154,10 @@
         </li>
 
         <li class="product-card">
+          <a class="product-card-link" href="product.html">
           <img class="product-card-image" src="#" alt="Desert Quail Inn">
           <h3 class="product-card-title">Desert Quail Inn</h3>
+          </a>
           <span class="product-type">Мотель</span>
           <span class="product-card-price">От 3000 ₽</span>
           <a class="product-card-button button" href="product.html">Подробнее</a>
@@ -163,8 +167,10 @@
         </li>
 
         <li class="product-card">
+          <a class="product-card-link" href="product.html">
           <img class="product-card-image" src="#" alt="Villas at Poco Diablo">
           <h3 class="product-card-title">Villas at Poco Diablo</h3>
+          </a>
           <span class="product-type">Апартаменты</span>
           <span class="product-card-price">От 2000 ₽</span>
           <a class="product-card-button button" href="product.html">Подробнее</a>
@@ -174,8 +180,10 @@
         </li>
 
         <li class="product-card">
+          <a class="product-card-link" href="product.html">
           <img class="product-card-image" src="#" alt="GreenTree Inn">
           <h3 class="product-card-title">GreenTree Inn</h3>
+          </a>
           <span class="product-type">Гостиница</span>
           <span class="product-card-price">От 3000 ₽</span>
           <a class="product-card-button button" href="product.html">Подробнее</a>
@@ -218,19 +226,21 @@
       </form>
     </section>
 
-    <Section class="mailing-list">
-      <h1 class="visually-hidden">Подписка на рассылку</h1>
-      <p class="heading-4">Подпишитесь на рассылку</p>
+    <section class="mailing-list">
+      <h4 class="visually-hidden">Подписка на рассылку</h4>
+      <p class="mailing-subscription">Подпишитесь на рассылку</p>
       <p class="mailing-list-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="#" method="post">
         <label>
           <input class="e-mail-input" type="text" name="e-mail" value="Ваш e-mail">
         </label>
         <label>
-          <input class="submit-button" type="button" value="Подписаться">
+          <input class="submit-button" type="sumbit" value="Подписаться">
         </label>
       </form>
-      </Section>
+    </section>
+
+
   </main>
   <footer class="footer-main">
     <ul>
