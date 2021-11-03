@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Курорт Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Выбор жилья в Седоне</title>
 </head>
 
 <body>
@@ -22,7 +23,6 @@
     </ul>
   </nav>
   <main class="main-inner">
-
     <section>
       <h1 class="main-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -37,10 +37,8 @@
     <section>
       <h2 class="visually-hidden">Форма для фильтра гостиниц</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура</legend>
-
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -64,9 +62,7 @@
               </label>
             </li>
           </ul>
-
         </fieldset>
-
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья</legend>
           <ul class="catalog-filter-list">
@@ -113,12 +109,10 @@
         <button class="button" type="reset">Сбросить</button>
       </form>
     </section>
-    
     <section class="accomodation-selection">
       <h1 class="visually-hidden">Список выбранных гостиниц</h1>
       <span class="selection-head">Найдено гостиниц:</span>
       <span class="number-selected">38</span>
-
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sort">
@@ -128,7 +122,6 @@
         </select>
         <button class="visually-hidden" type="submit">Отсортировать жилье</button>
       </form>
-
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
@@ -138,7 +131,6 @@
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать плитку</span>
       </a>
-
       <ul class="product-list">
         <li class="product-card">
           <a class="product-image-link" href="product.html">
@@ -154,7 +146,6 @@
           <span class="rating-star">☆☆☆☆</span>
           <span class="product-rating">Рейтинг:8.5</span>
         </li>
-
         <li class="product-card">
           <a class="product-image-link" href="product.html">
             <img class="product-card-image" src="#" alt="Desert Quail Inn">
@@ -169,7 +160,6 @@
           <span class="rating-star">☆☆☆</span>
           <span class="product-rating">Рейтинг:8.9</span>
         </li>
-
         <li class="product-card">
           <a class="product-image-link" href="product.html">
             <img class="product-card-image" src="#" alt="Villas at Poco Diablo">
@@ -184,7 +174,6 @@
           <span class="rating-star">☆☆</span>
           <span class="product-rating">Рейтинг:9.2</span>
         </li>
-
         <li class="product-card">
           <a class="product-image-link" href="product.html">
             <img class="product-card-image" src="#" alt="GreenTree Inn">
@@ -200,7 +189,6 @@
           <span class="product-rating">Рейтинг:9.2</span>
         </li>
       </ul>
-
       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
       <ul class="pagination">
         <li class="pagination-item">
@@ -222,7 +210,6 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-
       <form class="number-show">
         <label class="visually-hidden" for="show-number">Гостиниц на странице:</label>
         <select class="show-control" id="show-number" name="show">
@@ -233,9 +220,8 @@
         <button class="visually-hidden" type="submit">Количество на странице</button>
       </form>
     </section>
-
     <section class="mailing-list">
-      <h4 class="visually-hidden">Подписка на рассылку</h4>
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p class="mailing-subscription">Подпишитесь на рассылку</p>
       <p class="mailing-list-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="#" method="post">
@@ -243,12 +229,10 @@
           <input class="e-mail-input" type="text" name="e-mail" value="Ваш e-mail">
         </label>
         <label>
-          <input class="submit-button" type="sumbit" value="Подписаться">
+          <input class="submit-button" type="submit" value="Подписаться">
         </label>
       </form>
     </section>
-
-
   </main>
   <footer class="footer-main">
     <ul>
@@ -257,7 +241,7 @@
       <li class="footer-item"><a href="https://www.youtube.com/c/HTMLAcademyRUS">YouTube</a></li>
     </ul>
     <a class="telephone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-    <a class="footer-link" href="https://htmlacademy.ru"><img src="" width="" height="" alt="HTML Academy"></a>
+    <a class="footer-link" href="https://htmlacademy.ru"><img src="img/logo-html-academy.svg" width="115" height="33" alt="HTML Academy"></a>
   </footer>
 </body>
 
