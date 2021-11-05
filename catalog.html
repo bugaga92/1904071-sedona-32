@@ -9,20 +9,21 @@
 
 <body>
   <nav>
-    <header>Шапка сайта</header>
+    <header class="page-header">Шапка сайта</header>
     <ul class="nav">
-      <li class="view-option">Главная</li>
-      <li class="view-option">О Седоне</li>
-      <li class="view-option">Гостиницы</li>
+      <li class="nav-item">Главная</li>
+      <li class="nav-item">О Седоне</li>
+      <li class="nav-item">Гостиницы</li>
     </ul>
-    <img class="logo-sedona" src="#" width="" height="" alt="Логотип Седона">
+    <img class="logo-sedona" src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
     <ul class="nav-user">
-      <li class="view-option">Поиск</li>
-      <li class="view-option">Любимые закладки</li>
-      <li class="view-option">Хочу сюда</li>
+      <li class="nav-item">Поиск</li>
+      <li class="nav-item">Любимые закладки</li>
+      <li class="nav-item">Хочу сюда</li>
     </ul>
   </nav>
   <main class="main-inner">
+    <div class="filter-background">
     <section>
       <h1 class="main-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -34,7 +35,7 @@
         </li>
       </ul>
     </section>
-    <section>
+       <section>
       <h2 class="visually-hidden">Форма для фильтра гостиниц</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -89,15 +90,16 @@
             </li>
           </ul>
         </fieldset>
+      
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость, Р</legend>
+          <legend class="catalog-filter-title">Стоимость, ₽</legend>
           <button class="range-toggle toggle-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену.</span>
           </button>
           <button class="range-toggle toggle-max" type="button">
             <span class="visually-hidden">Изменить максимальную цену.</span>
           </button>
-          <input class="catalog-filter-input" type="number" name="min-price">
+          <input class="catalog-filter-input" type="number" name="min-price"> ₽
           <label class="catalog-filter-label">
             <input class="catalog-filter-input" type="number" name="min-price"> ₽
           </label>
@@ -105,12 +107,14 @@
             <input class="catalog-filter-input" type="number" name="max-price"> ₽
           </label>
         </fieldset>
+      
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
       </form>
-    </section>
+      </section>
+    </div>
     <section class="accomodation-selection">
-      <h1 class="visually-hidden">Список выбранных гостиниц</h1>
+      <h2 class="visually-hidden">Список выбранных гостиниц</h2>
       <span class="selection-head">Найдено гостиниц:</span>
       <span class="number-selected">38</span>
       <form class="sorting-type">
@@ -125,7 +129,7 @@
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
-      <a class="button" href="#">
+      <a href="#" class="button button-light">
         <span class="visually-hidden">Показать карточки</span>
       </a>
       <a href="#" class="button button-light">
@@ -134,7 +138,7 @@
       <ul class="product-list">
         <li class="product-card">
           <a class="product-image-link" href="product.html">
-            <img class="product-card-image" src="#" alt="Amara Resort & Spa">
+            <img class="product-card-image" src="img/hotel-1-Amara-Resort-Spa.jpg" alt="Amara Resort & Spa">
           </a>
           <h3 class="product-card-title">
             <a class="product-card-link" href="product.html">Amara Resort & Spa</a>
@@ -148,7 +152,7 @@
         </li>
         <li class="product-card">
           <a class="product-image-link" href="product.html">
-            <img class="product-card-image" src="#" alt="Desert Quail Inn">
+            <img class="product-card-image" src="img/hotel-2-Desert-Quail-Inn.jpg" alt="Desert Quail Inn">
           </a>
           <h3 class="product-card-title">
             <a class="product-card-link" href="product.html">Desert Quail Inn</a>
@@ -162,7 +166,7 @@
         </li>
         <li class="product-card">
           <a class="product-image-link" href="product.html">
-            <img class="product-card-image" src="#" alt="Villas at Poco Diablo">
+            <img class="product-card-image" src="img/hotel-3-Villas-at-Poco-Diablo.png" alt="Villas at Poco Diablo">
           </a>
           <h3 class="product-card-title">
             <a class="product-card-link" href="product.html">Villas at Poco Diablo</a>
@@ -176,7 +180,7 @@
         </li>
         <li class="product-card">
           <a class="product-image-link" href="product.html">
-            <img class="product-card-image" src="#" alt="GreenTree Inn">
+            <img class="product-card-image" src="img/hotel-4-GreenTree-Inn.jpg" alt="GreenTree Inn">
           </a>
           <h3 class="product-card-title">
             <a class="product-card-link" href="product.html">GreenTree Inn</a>
@@ -233,7 +237,7 @@
         </label>
       </form>
     </section>
-  </main>
+    </main>
   <footer class="footer-main">
     <ul>
       <li class="footer-item"><a href="https://twitter.com/htmlacademy_ru">Наш Twitter</a></li>
@@ -241,7 +245,8 @@
       <li class="footer-item"><a href="https://www.youtube.com/c/HTMLAcademyRUS">YouTube</a></li>
     </ul>
     <a class="telephone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-    <a class="footer-link" href="https://htmlacademy.ru"><img src="img/logo-html-academy.svg" width="115" height="33" alt="HTML Academy"></a>
+    <a class="footer-link" href="https://htmlacademy.ru"><img src="img/logo-html-academy.svg" width="115" height="33"
+        alt="HTML Academy"></a>
   </footer>
 </body>
 
