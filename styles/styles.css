@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,60 +11,95 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+html {
+  height: 100%;
+  background: #808080;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
   background-color: #ffffff;
   text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   background-color: #83B3D3;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
+  border-radius: 10px;
+  border: none;
+
+}
+
+.selection-message {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
 }
 
 .selection-head {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 39px;
-   text-align: left;
+  text-align: left;
 }
 
-.number-selected {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 39px;
-  }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  width: 490px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-user {
+  display: flex;
+  width: 250px;
+  margin-left: auto;
+}
+
 .nav-item {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-decoration: none;
+}
+
+.logo-sedona {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-header-title {
@@ -73,19 +108,16 @@ body {
   font-weight: 700;
   line-height: 78px;
   text-align: left;
-  color: white;
+  color: #ffffff;
 }
 
 .breadcrumbs {
-  color: white;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
-  color: inherit
-}
-
-.breadcrumbs-link {
-  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .catalog-filter-item {
@@ -95,7 +127,7 @@ body {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: center;
-  color: white;
+  color:#ffffff;
 }
 
 .catalog-filter-title {
@@ -103,66 +135,68 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  color: white;
-  text-align: center;
+  }
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  
+
 }
 
 .advantages-item {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  background-color: white;
+  background-color: #ffffff;
+  width: 400px;
+  height: 400px;
 }
 
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: white;
   text-transform: uppercase;
-
 }
 
+
 .advantages-text {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: white;
+  color: #ffffff;
+}
+
+.advantages-img {
+  width: 800px;
 }
 
 .features-title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+    font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .features-text {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: black;
+  color: rgb(7, 0, 0);
 }
 
 .advantages-item-white {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+ 
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -179,7 +213,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
-
+.features-list{
+  background:#83B3D3;
+}
 
 .interes-text {
   font-size: 22px;
@@ -192,42 +228,45 @@ body {
   background-image: url("../img/background-mail.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: white;
-  color: black;
+  background-color: #83B3D3;
+  ;
+  color: #000000;
 }
 
 .filter-background {
   background-image: url("../img/hotels-Sedona.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: white;
-  color: black;
+  background-color:#ffffff;
+  color:#000000;
 }
 
 .submit-button {
-  background-color: #83B3D3;
+  background-color: #756257;
   text-align: center;
+  color:#ffffff;
 }
+
 .button-light {
-    background-color: white;
-  color: black;
+  background-color:#ffffff;
+  color: #000000;
 }
 
 .product-card-link {
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 31px;
-text-align: center;
-text-decoration: none; 
-color:black
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
 }
 
 .product-type {
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 .product-rating {
@@ -235,7 +274,9 @@ line-height: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
- }
+  text-transform: uppercase;
+}
+
 .features-text {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -276,10 +317,6 @@ line-height: 23px;
   background-color: #83B3D3;
 }
 
-.features-item-white {
-  background-color: white;
-}
-
 .advantages-item-gray {
   background-color: #83B3D333;
 }
@@ -314,8 +351,8 @@ line-height: 23px;
 }
 
 .pagination {
-  background-color:white;
-  }
+  background-color: white;
+}
 
 .pagination-link {
   color: white;
@@ -327,6 +364,10 @@ line-height: 23px;
 
 .pagination-current {
   color: black;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
+
+.main-inner {
+  flex-grow: 1;
+}
